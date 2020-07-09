@@ -21,4 +21,4 @@ app.post('/posts', (req, res) => {
   res.status(201).send(posts[id])
 })
 
-app.listen(3001, () => { console.log('Posts server listening on 3001')}
+app.listen(3001, () => { console.log('Posts server listening on 3001')})
