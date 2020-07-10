@@ -1,10 +1,12 @@
 const express = require('express')
+const cors = require('cors')
 const { randomBytes } = require('crypto')
 const app = express()
 
 const posts = {}
 
 app.use(express.json())
+app.use(cors({ origin: true }))
 
 app.get('/posts', (req, res) => {
   res.send(posts)
